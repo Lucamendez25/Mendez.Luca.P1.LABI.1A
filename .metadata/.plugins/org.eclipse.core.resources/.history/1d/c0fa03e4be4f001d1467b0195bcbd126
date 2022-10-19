@@ -84,7 +84,7 @@ int validarEdades(eMascota *pMascota)
 
 	if(pMascota!=NULL)
 	{
-		while(pMascota->edad<0 || pMascota->edad>50)
+		while(pMascota->edad<18 || pMascota->edad>60)
 		{
 			printf("edad invalida, intentelo nuevamente: ");
 			scanf("%d",&pMascota->edad);
