@@ -1,0 +1,9 @@
+11:50:43 **** Incremental Build of configuration Debug for project miParcial1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\aritmetica.o" "..\\src\\aritmetica.c" 
+gcc -o miParcial1.exe "src\\aritmetica.o" "src\\miParcial1.o" "src\\validaciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file miParcial1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+11:50:46 **** Incremental Build of configuration Debug for project miParcial1 ****
+Info: Internal Builder is used for build
+gcc -o miParcial1.exe "src\\aritmetica.o" "src\\miParcial1.o" "src\\validaciones.o" 
