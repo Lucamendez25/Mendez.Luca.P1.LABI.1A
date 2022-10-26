@@ -8,6 +8,8 @@
 #ifndef VALIDACIONES_H_
 #define VALIDACIONES_H_
 
+
+
 /**
  * @brief valida el si quiere seguir, o no
  * @param seguir
@@ -30,6 +32,17 @@ int validarNombreMascota(eMascota *pMascota, int tam);
  * @return
  */
 int validarIDs(eMascota *pMascota, int condicion);
+
+/**
+ * @brief valida id servicios
+ *
+ * @param vecServicios
+ * @param id
+ * @param tam
+ * @return
+ */
+int validarIdServicios(eServicio vecServicios[],int id,  int tam);
+
 
 
 /**

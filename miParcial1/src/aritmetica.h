@@ -88,21 +88,6 @@ int buscarLibreMascotas(int* pIndice, eMascota vec[], int tam);
 
 
 /**
- * @brief Muestra el menu
- *
- * @return opcion
- */
-char menu();
-
-
-
-/**
- * @brief Muestra submenu para modificar (tipo, vacunado)
- * @return
- */
-int subMenuModificar();
-
-/**
  * @brief Agrega una mascota
  * @param pLegajo
  * @param vecMascotas
@@ -113,6 +98,7 @@ int subMenuModificar();
  * @param tamColores
  * @return
  */
+
 int altaMascotas(int* pLegajo, eMascota vecMascotas[], eTipo vecTipos[], eColor vecColores[], int tamMascotas, int tamTipos, int tamColores);
 
 
@@ -129,7 +115,7 @@ int altaMascotas(int* pLegajo, eMascota vecMascotas[], eTipo vecTipos[], eColor 
  * @param tamTrabajos
  * @return
  */
-int altaTrabajos(int* pLegajo, eMascota vecMascotas[], eTipo vecTipos[], eColor vecColores[], int tamMascotas, int tamTipos, int tamColores, eTrabajo vecTrabajos[], int tamTrabajos);
+int altaTrabajos(int* pLegajo, eMascota vecMascotas[], eTipo vecTipos[], eColor vecColores[], int tamMascotas, int tamTipos, int tamColores, eTrabajo vecTrabajos[], int tamTrabajos, eServicio vecServicios[], int tamServicios);
 
 
 
@@ -160,7 +146,7 @@ int cargarMascota(eMascota * pMascota,  eTipo vecTipos[], eColor vecColor[], int
  * @param tamTrabajos
  * @return
  */
-int cargarTrabajo(eMascota vecMascotas[],  eTipo vecTipos[], eColor vecColores[], int tamMascotas, int tamTipos, int tamColores, eTrabajo * pTrabajo, int tamTrabajos);
+int cargarTrabajo(eMascota vecMascotas[],  eTipo vecTipos[], eColor vecColores[], int tamMascotas, int tamTipos, int tamColores, eTrabajo * pTrabajo, int tamTrabajos, eServicio vecServicios[], int tamServicios);
 
 
 /**
@@ -206,59 +192,6 @@ int cargarDescripcionServicio(int idServicios, char descripcion[], eServicio vec
 
 
 
-
-/**
- * @brief Muestra todos los tipos que hay cargados con su ID
- * @param vec
- * @param tam
- * @return
- */
-int mostrarTipos(eTipo vec[], int tam);
-
-
-
-/**
- * @brief Muestra todos los colores que hay cargados con su ID
- * @param vec
- * @param tam
- * @return
- */
-int mostrarColores(eColor vec[], int tam);
-
-/**
- * @brief muestra todas las mascotas
- * @param vecMascotas
- * @param vecTipos
- * @param vecColores
- * @param tamMascotas
- * @param tamTipos
- * @param tamColores
- * @return
- */
-int mostrarMascotas(eMascota vecMascotas[], eTipo vecTipos[],eColor vecColores[] ,int tamMascotas, int tamTipos, int tamColores);
-
-
-/**
- * @brief Muestra una mascota sola
- * @param mascota
- * @param vecTipos
- * @param vecColores
- * @param tamTipos
- * @param tamColores
- * @return
- */
-int mostrarMascota(eMascota mascota, eTipo vecTipos[],eColor vecColores[] , int tamTipos, int tamColores );
-
-
-
-/**
- * @brief muestra los servicios disponibles
- * @param vec
- * @param tam
- * @return
- */
-int mostrarServicios(eServicio vec[], int tam);
-
 /**
  * @brief modifica a la mascota que seleccionamos, dependediendo si elegimos tipo o vacunacion
  * @param vecMascotas
@@ -272,36 +205,6 @@ int mostrarServicios(eServicio vec[], int tam);
 int modificarMascotas(eMascota vecMascotas[], eTipo vecTipos[],eColor vecColores[] ,int tamMascotas, int tamTipos, int tamColores);
 
 
-/**
- * @brief  muestra un trabajo
- * @param vecMascota
- * @param vecTipos
- * @param vecColores
- * @param tamMascotas
- * @param tamTipos
- * @param tamColores
- * @param trabajo
- * @param tamTrabajo
- * @param vecServicios
- * @param tamServicios
- * @return
- */
-int mostrarTrabajo(eMascota vecMascota[], eTipo vecTipos[],eColor vecColores[],int tamMascotas, int tamTipos, int tamColores, eTrabajo trabajo, int tamTrabajo, eServicio vecServicios[], int tamServicios);
-/**
- * @brief muestra todos los trabajos
- * @param vecMascotas
- * @param vecTipos
- * @param vecColores
- * @param tamMascotas
- * @param tamTipos
- * @param tamColores
- * @param vecTrabajos
- * @param tamTrabajos
- * @param vecServicios
- * @param tamServicios
- * @return
- */
-int mostrarTrabajos(eMascota vecMascotas[], eTipo vecTipos[],eColor vecColores[] ,int tamMascotas, int tamTipos, int tamColores, eTrabajo vecTrabajos[], int tamTrabajos, eServicio vecServicios[], int tamServicios);
 
 
 /** Busca por id a la mascota que necesita el usuario
@@ -341,23 +244,3 @@ int bajaMascotas(eMascota vecMascotas[], eTipo vecTipos[],eColor vecColores[] ,i
  */
 int ordenarMascotas(eMascota vecMascotas[], eTipo vecTipos[],eColor vecColores[] ,int tamMascotas, int tamTipos, int tamColores);
 
-/**
- * @brief hardcodea mascotas
- * @param pLegajo
- * @param vec
- * @param tam
- * @param cant
- * @return
- */
-int hardcodearMascotas(int* pLegajo ,eMascota vec[], int tam, int cant);
-
-
-/**
- * @brief Hardcodea los trabajos
- * @param pLegajo
- * @param vec
- * @param tam
- * @param cant
- * @return
- */
-int hardcodearTrabajos(int* pLegajo ,eTrabajo vec[], int tam, int cant);

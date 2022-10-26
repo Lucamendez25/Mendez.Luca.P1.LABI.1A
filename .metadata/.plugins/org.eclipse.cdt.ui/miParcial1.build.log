@@ -1,6 +1,6 @@
-12:01:32 **** Incremental Build of configuration Debug for project miParcial1 ****
+11:48:15 **** Incremental Build of configuration Debug for project miParcial1 ****
 Info: Internal Builder is used for build
-gcc -o miParcial1.exe "src\\aritmetica.o" "src\\miParcial1.o" "src\\validaciones.o" 
+gcc -o miParcial1.exe "src\\aritmetica.o" "src\\hardcodear.o" "src\\miParcial1.o" "src\\output.o" "src\\validaciones.o" 
 
-12:01:32 Build Finished. 0 errors, 0 warnings. (took 155ms)
+11:48:15 Build Finished. 0 errors, 0 warnings. (took 148ms)
 

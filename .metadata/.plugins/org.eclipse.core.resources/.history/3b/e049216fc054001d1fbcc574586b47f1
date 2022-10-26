@@ -1,0 +1,16 @@
+/*
+ * hardcodear.c
+ *
+ *  Created on: 25 oct. 2022
+ *      Author: Luca
+ */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include "aritmetica.h"
+#include "validaciones.h"
+#include "output.h"
+#include "hardcodear.h"

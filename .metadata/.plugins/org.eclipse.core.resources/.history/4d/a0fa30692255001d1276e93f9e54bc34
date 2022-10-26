@@ -1,0 +1,127 @@
+/*
+ * output.h
+ *
+ *  Created on: 25 oct. 2022
+ *      Author: Luca
+ */
+
+#ifndef OUTPUT_H_
+#define OUTPUT_H_
+
+
+/**
+ * @brief
+ *
+ */
+void systemCls();
+
+/**
+ * @brief
+ *
+ */
+void systemPause();
+
+
+/**
+ * @brief Muestra el menu
+ *
+ * @return opcion
+ */
+char menu();
+
+
+
+/**
+ * @brief Muestra submenu para modificar (tipo, vacunado)
+ * @return
+ */
+int subMenuModificar();
+
+
+
+/**
+ * @brief Muestra todos los tipos que hay cargados con su ID
+ * @param vec
+ * @param tam
+ * @return
+ */
+int mostrarTipos(eTipo vec[], int tam);
+
+
+
+/**
+ * @brief Muestra todos los colores que hay cargados con su ID
+ * @param vec
+ * @param tam
+ * @return
+ */
+int mostrarColores(eColor vec[], int tam);
+
+/**
+ * @brief muestra todas las mascotas
+ * @param vecMascotas
+ * @param vecTipos
+ * @param vecColores
+ * @param tamMascotas
+ * @param tamTipos
+ * @param tamColores
+ * @return
+ */
+int mostrarMascotas(eMascota vecMascotas[], eTipo vecTipos[],eColor vecColores[] ,int tamMascotas, int tamTipos, int tamColores);
+
+
+/**
+ * @brief Muestra una mascota sola
+ * @param mascota
+ * @param vecTipos
+ * @param vecColores
+ * @param tamTipos
+ * @param tamColores
+ * @return
+ */
+int mostrarMascota(eMascota mascota, eTipo vecTipos[],eColor vecColores[] , int tamTipos, int tamColores );
+
+
+
+/**
+ * @brief muestra los servicios disponibles
+ * @param vec
+ * @param tam
+ * @return
+ */
+int mostrarServicios(eServicio vec[], int tam);
+
+
+/**
+ * @brief  muestra un trabajo
+ * @param vecMascota
+ * @param vecTipos
+ * @param vecColores
+ * @param tamMascotas
+ * @param tamTipos
+ * @param tamColores
+ * @param trabajo
+ * @param tamTrabajo
+ * @param vecServicios
+ * @param tamServicios
+ * @return
+ */
+int mostrarTrabajo(eMascota vecMascota[], eTipo vecTipos[],eColor vecColores[],int tamMascotas, int tamTipos, int tamColores, eTrabajo trabajo, int tamTrabajo, eServicio vecServicios[], int tamServicios);
+/**
+ * @brief muestra todos los trabajos
+ * @param vecMascotas
+ * @param vecTipos
+ * @param vecColores
+ * @param tamMascotas
+ * @param tamTipos
+ * @param tamColores
+ * @param vecTrabajos
+ * @param tamTrabajos
+ * @param vecServicios
+ * @param tamServicios
+ * @return
+ */
+int mostrarTrabajos(eMascota vecMascotas[], eTipo vecTipos[],eColor vecColores[] ,int tamMascotas, int tamTipos, int tamColores, eTrabajo vecTrabajos[], int tamTrabajos, eServicio vecServicios[], int tamServicios);
+
+
+#endif /* OUTPUT_H_ */

@@ -1,0 +1,42 @@
+/*
+ * output.h
+ *
+ *  Created on: 25 oct. 2022
+ *      Author: Luca
+ */
+
+#ifndef OUTPUT_H_
+#define OUTPUT_H_
+
+
+/**
+ * @brief Muestra el menu
+ *
+ * @return opcion
+ */
+char menu();
+
+
+
+/**
+ * @brief Muestra submenu para modificar (tipo, vacunado)
+ * @return
+ */
+int subMenuModificar();
+
+/**
+ * @brief Agrega una mascota
+ * @param pLegajo
+ * @param vecMascotas
+ * @param vecTipos
+ * @param vecColores
+ * @param tamMascotas
+ * @param tamTipos
+ * @param tamColores
+ * @return
+ */
+
+
+
+
+#endif /* OUTPUT_H_ */
